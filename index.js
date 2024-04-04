@@ -43,7 +43,7 @@ async function makeTodo(todos) {
                 {
                     name: "todo",
                     type: "input",
-                    message: "Enter updated item..",
+                    message: "Enter updated item...",
                 },
             ]);
             let updatedtodo = todos.filter((value) => value !== updateTodo.todo);

@@ -51,7 +51,7 @@ async function makeTodo(todos: string[]) {
         {
           name: "todo",
           type: "input",
-          message: "Enter updated item..",
+          message: "Enter updated item...",
         },
       ]);
 
