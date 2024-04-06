@@ -18,7 +18,7 @@ async function makeTodo(todos) {
                 {
                     name: "todo",
                     type: "input",
-                    message: chalk.bgMagenta.red("Add items in your List.."),
+                    message: chalk.yellow("Add items in your List.."),
                 },
                 {
                     name: "addmore",
@@ -35,7 +35,7 @@ async function makeTodo(todos) {
                 {
                     name: "todo",
                     type: "list",
-                    message: chalk.bgYellow.red("Choose an Item you want to update in your List"),
+                    message: chalk.yellow("Choose an Item you want to update in your List"),
                     choices: todos.map((item) => item),
                 },
             ]);
@@ -51,7 +51,7 @@ async function makeTodo(todos) {
             console.log(todos);
         }
         if (ans.operation === "View") {
-            console.log(chalk.bold.whiteBright("Your To-Do List"));
+            console.log(chalk.bold.bgGray.whiteBright("Your To-Do List"));
             console.log(todos);
         }
         if (ans.operation === "Delete") {
@@ -69,7 +69,7 @@ async function makeTodo(todos) {
         }
         if (ans.operation === "Exit") {
             condition = false;
-            console.log(chalk.bgYellowBright.bold.red("---- Thanks for using ToDo App..! ----"));
+            console.log(chalk.bold.cyanBright("---- Thanks for using ToDo App..! ----"));
         }
     }
 }
